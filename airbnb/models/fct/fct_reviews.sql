@@ -1,5 +1,3 @@
-
-
 {{
     config(
         materialized = 'incremental',
@@ -9,15 +7,17 @@
 }}
 
 
-
-with src_reviews as (
-    select * from {{ref('src_raw_reviews')}}
+WITH src_reviews AS (
+  SELECT * FROM {{ ref('src_raw_reviews') }}
 )
+SELECT
+  {{ dbt_utils.generate_surrogate_key(['listing_id', 'review_date', 'reviewer_name', 'review_comments']) }}
+    AS review_id,
+  *
+  FROM src_reviews
+WHERE review_comments is not null
 
-select *  
-from src_reviews
-where REVIEW_COMMENTS is not null
-
-{% if is_incremental () %}
-and REVIEW_DATE > (select max(REVIEW_DATE) from {{ this }})
+{% if is_incremental() %}
+  AND review_date > (select max(review_date) f
+  from {{ this }})
 {% endif %}

@@ -695,8 +695,8 @@ Our first macro. Add this to `macros/select_positive_values.sql`
 
 Compile and execute it:
 ```sh
-dbt compile --inline "{{ select_positive_values('dim_listings_cleansed', 'price') }}"
-dbt show --inline "{{ select_positive_values('dim_listings_cleansed', 'price') }}"
+dbt compile --inline "{{ select_positive_values('dim_listings', 'price') }}"
+dbt show --inline "{{ select_positive_values('dim_listings', 'price') }}"
 ```
 
 ### Advanced Macros
