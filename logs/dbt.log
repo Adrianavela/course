@@ -612,3 +612,73 @@ There are 1 unused configuration paths:
 [0m23:58:38.796506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea781f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d605010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ea50dd0>]}
 [0m23:58:38.796640 [debug] [MainThread]: Flushing usage events
 [0m23:58:39.210406 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:22:56.440064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10897b380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eef610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109eef750>]}
+
+
+============================== 19:22:56.443088 | 0f6fbcc0-d214-4d6d-b95d-95d8e5631177 ==============================
+[0m19:22:56.443088 [info ] [MainThread]: Running with dbt=1.11.7
+[0m19:22:56.443394 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'static_parser': 'True', 'use_colors': 'True', 'debug': 'False', 'invocation_command': 'dbt debug', 'no_print': 'None', 'version_check': 'True', 'empty': 'None', 'printer_width': '80', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'target_path': 'None', 'profiles_dir': '/Users/avela/Documents/course', 'log_path': 'logs', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'introspect': 'True', 'quiet': 'False', 'warn_error': 'None'}
+[0m19:22:56.454490 [info ] [MainThread]: dbt version: 1.11.7
+[0m19:22:56.454694 [info ] [MainThread]: python version: 3.13.12
+[0m19:22:56.454820 [info ] [MainThread]: python path: /Users/avela/Documents/course/.venv/bin/python
+[0m19:22:56.454933 [info ] [MainThread]: os info: macOS-26.4-arm64-arm-64bit-Mach-O
+[0m19:22:56.682346 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m19:22:56.682596 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m19:22:56.682725 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m19:22:56.714953 [info ] [MainThread]: Using profiles dir at /Users/avela/Documents/course
+[0m19:22:56.715163 [info ] [MainThread]: Using profiles.yml file at /Users/avela/Documents/course/profiles.yml
+[0m19:22:56.715310 [info ] [MainThread]: Using dbt_project.yml file at /Users/avela/Documents/course/dbt_project.yml
+[0m19:22:56.715759 [info ] [MainThread]: adapter type: snowflake
+[0m19:22:56.715925 [info ] [MainThread]: adapter version: 1.11.3
+[0m19:22:56.716055 [info ] [MainThread]: Configuration:
+[0m19:22:56.716172 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:22:56.716279 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:22:56.716386 [info ] [MainThread]: Required dependencies:
+[0m19:22:56.716529 [debug] [MainThread]: Executing "git --help"
+[0m19:22:56.743637 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:22:56.744084 [debug] [MainThread]: STDERR: "b''"
+[0m19:22:56.744236 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:22:56.744387 [info ] [MainThread]: Connection:
+[0m19:22:56.744544 [info ] [MainThread]:   account: SLYKHBU-VT09868
+[0m19:22:56.744652 [info ] [MainThread]:   user: dbt
+[0m19:22:56.744751 [info ] [MainThread]:   database: AIRBNB
+[0m19:22:56.744849 [info ] [MainThread]:   warehouse: COMPUTE_WH
+[0m19:22:56.744939 [info ] [MainThread]:   role: TRANSFORM
+[0m19:22:56.745031 [info ] [MainThread]:   schema: DEV
+[0m19:22:56.745121 [info ] [MainThread]:   authenticator: None
+[0m19:22:56.745209 [info ] [MainThread]:   oauth_client_id: None
+[0m19:22:56.745304 [info ] [MainThread]:   query_tag: None
+[0m19:22:56.745393 [info ] [MainThread]:   client_session_keep_alive: False
+[0m19:22:56.745484 [info ] [MainThread]:   host: None
+[0m19:22:56.745574 [info ] [MainThread]:   port: None
+[0m19:22:56.745660 [info ] [MainThread]:   proxy_host: None
+[0m19:22:56.745750 [info ] [MainThread]:   proxy_port: None
+[0m19:22:56.745835 [info ] [MainThread]:   protocol: None
+[0m19:22:56.745923 [info ] [MainThread]:   connect_retries: 1
+[0m19:22:56.746012 [info ] [MainThread]:   connect_timeout: None
+[0m19:22:56.746100 [info ] [MainThread]:   retry_on_database_errors: False
+[0m19:22:56.746190 [info ] [MainThread]:   retry_all: False
+[0m19:22:56.746278 [info ] [MainThread]:   insecure_mode: False
+[0m19:22:56.746366 [info ] [MainThread]:   reuse_connections: True
+[0m19:22:56.746453 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m19:22:56.746543 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m19:22:56.746902 [info ] [MainThread]: Registered adapter: snowflake=1.11.3
+[0m19:22:56.801922 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m19:22:56.855161 [debug] [MainThread]: Using snowflake connection "debug"
+[0m19:22:56.855368 [debug] [MainThread]: On debug: select 1 as id
+[0m19:22:56.855504 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:22:57.735467 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.880 seconds
+[0m19:22:57.737491 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:22:57.738250 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:22:57.738674 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </Users/avela/Documents/course/dbt_project.yml> not found
+
+[0m19:22:57.739730 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.3449559, "process_in_blocks": "0", "process_kernel_time": 0.257405, "process_mem_max_rss": "160071680", "process_out_blocks": "0", "process_user_time": 0.959501}
+[0m19:22:57.740535 [debug] [MainThread]: Command `dbt debug` failed at 19:22:57.740373 after 1.35 seconds
+[0m19:22:57.741094 [debug] [MainThread]: Connection 'debug' was left open.
+[0m19:22:57.741483 [debug] [MainThread]: On debug: Close
+[0m19:22:57.835465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10b235a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10afadeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ada3130>]}
+[0m19:22:57.836203 [debug] [MainThread]: Flushing usage events
+[0m19:22:58.250089 [debug] [MainThread]: An error was encountered while trying to flush usage events

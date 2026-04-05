@@ -51,4 +51,5 @@ data_tests:
   +store_failures: true
   +schema: __test_failures
   
- 
+vars:
+   user_name: "Adriana"
