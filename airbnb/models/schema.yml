@@ -8,11 +8,13 @@ models:
           severity: error
     columns:
       - name: listing_id
+        description: primary key for listings
         data_tests:
           - unique
           - not_null
   
       - name: host_id
+        description: host id's reference the host
         data_tests:
           - not_null
           - relationships:
@@ -36,6 +38,7 @@ models:
 
 
   - name: dim_host
+    description: host model with documentation of the host history.
     config:
       contract:
         enforced: true
